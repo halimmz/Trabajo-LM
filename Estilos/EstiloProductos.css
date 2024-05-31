@@ -158,6 +158,8 @@ ul li {
     display: flex; /* Usa el modelo de caja flexible para organizar los elementos hijos */
     justify-content: center; /* Centra los elementos hijos horizontalmente */
     margin-top: 20px; /* Añade un margen superior de 20px */
+    width: 80%;
+    margin-left: 10%;
 }
 
 /* Estilos para los productos similares */
