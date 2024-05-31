@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Producto</title>
+    <link rel="stylesheet" href="../Estilos/EstiloProductos.css">
+    <link rel="stylesheet" href="../Estilos/header.css">
+    <link rel="stylesheet" href="../Estilos/footer.css">
+    <script src="../Scripts/java.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="cart-items"></div>
+        <div class="container">
+            <h1>Todo Relojes</h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Marcas.html">Marcas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="acerca.html">Acerca de Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="fotos">
+            <div class="product-images">
+                <img src="../Imagenes/casual 2_1.png" alt="Imagen 1">
+                <img src="../Imagenes/casual 2_2.png" alt="Imagen 2">
+                <img src="../Imagenes/casual 2_3.png" alt="Imagen 3">
+                <img src="../Imagenes/casual 2_4.png" alt="Imagen 4">
+            </div>
+            <div class="product-details">
+                <h2>Reloj de hombre Tommy Hilfiger, Becker 1710512 de malla de acero</h2>
+                <div class="tabs">
+                    <div class="tab active" data-tab="descripcion">Descripción</div>
+                    <div class="tab" data-tab="caracteristicas">Características</div>
+                    <div class="tab" data-tab="informacion-adicional">Información Adicional</div>
+                </div>
+                <div class="tab-content active" id="descripcion">
+                    <p>Su diseño elegante y versátil es ideal para cualquier ocasión. Es valorado por su calidad y estilo moderno.</p>
+                </div>
+                <div class="tab-content" id="caracteristicas">
+                    <ul>
+                        <li>Dimensiones caja: 43mm</li>
+                        <li>Color correa: plata</li>
+                        <li>Color esfera: plata</li>
+                        <li>Material de la carcasa: Acero inoxidable</li>
+                        <li>Material cristal: Mineral</li>
+                        <li>Cristal: Mineral</li>
+                        <li>Resistencia al agua: 50 metros</li>
+                        <li>Tamaño de la caja: 43 mm</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="informacion-adicional">
+                    <p>Reloj Tommy Hilfiger para hombre de la colección Becker fabricado en acero inoxidable plateado. Estamos ante un reloj de diseño atractivo y original compuesto por caja plateada de 43mm de diámetro con esfera plateada con índices y agujas en azul movidas por mecanismo de cuarzo analógico protegido por cristal minera</p>
+                </div>
+                <h3>Precio: 149 €</h3>
+                <button class="add-to-cart" onclick="addToCart()">Añadir al carrito</button>
+                
+            </div>
+            
+        </div>
+        <div class="logo">
+            <img src="../Imagenes/Tommy.png" alt="logo">
+            </div>
+            <section id="similar-watches" class="products">
+                <div class="container">
+                    <div class="Titulo">
+                        <h2>
+                            <span>Productos Similares</span>
+                        </h2>
+                    </div>
+                    <div class="products-grid" id="similar-watches-grid">
+                        <!-- Relojes aleatorios se agregarán aquí -->
+                    </div>
+                </div>
+            </section>
+    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-contact-info">
+                <h3>Información</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Dirección: Calle Mayor 9, Cartagena, España</p>
+                <p><i class="fas fa-phone-alt"></i> Teléfono: +34 633 455 732</p>
+                <p><i class="fas fa-envelope"></i> Email: Relojes@gmail.com</p>
+            </div>
+            <div class="footer-social-icons">
+                <h3>Síguenos</h3>
+                <a href="#" target="_blank"><img src="../Imagenes/facebook.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="../Imagenes/twitter.png" alt="Twitter"></a>
+                <a href="#" target="_blank"><img src="../Imagenes/instagram.png" alt="Instagram"></a>
+                <a href="#" target="_blank"><img src="../Imagenes/linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Suscribete</h3>
+                <form action="#" method="POST">
+                    <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">   
+            <p>&copy; 2024 EmpresaXYZ. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+    
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+
+                tab.classList.add('active');
+                document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
