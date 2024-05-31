@@ -1,0 +1,63 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    display: flex; /* Usa el modelo de caja flexible para organizar los elementos hijos */
+    flex-direction: column; /* Organiza los elementos hijos en una columna */
+    margin: auto; /* Centra el cuerpo horizontalmente */
+    font-family: Arial, sans-serif; /* Establece la fuente del texto a Arial con sans-serif como alternativa */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    width: 100%; /* Hace que el contenedor ocupe el 100% del ancho disponible */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 0%; /* Elimina el padding predeterminado */
+    margin: auto; /* Centra el contenedor horizontalmente */
+}
+
+/* Estilos para el contenedor de imágenes verticales */
+.vertical-images {
+    display: flex; /* Usa el modelo de caja flexible para organizar los elementos hijos */
+    align-items: center; /* Alinea los elementos hijos verticalmente al centro */
+    margin-top: 10px; /* Añade un margen superior de 10px */
+    width: 100%; /* Hace que el contenedor ocupe el 100% del ancho disponible */
+}
+
+
+.vertical-image {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    max-width: 50%; /* Establece el ancho máximo al 50% del contenedor padre */
+}
+
+
+.vertical-image img {
+    max-width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor padre */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Redondea las esquinas de la imagen */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Añade una sombra a la imagen */
+}
+
+/* Estilos para los párrafos dentro de .vertical-image */
+.vertical-image p {
+    font-size: 80px; /* Establece el tamaño de la fuente a 80px */
+}
+
+/* Estilos para el contenedor relativo */
+.contenedor {
+    position: relative; /* Hace que el contenedor tenga una posición relativa */
+}
+
+/* Estilos para el texto encima de la imagen */
+.texto-encima {
+    position: absolute; /* Posiciona el texto de forma absoluta respecto al contenedor relativo */
+    font-size: large; /* Establece el tamaño de la fuente a grande */
+    font-family: 'Courier New', Courier, monospace; /* Establece la fuente del texto a Courier New con Courier y monospace como alternativas */
+    color: white; /* Establece el color del texto a blanco */
+    top: 20.5%; /* Posiciona el texto al 20.5% desde el borde superior del contenedor */
+    left: 39.5%; /* Posiciona el texto al 39.5% desde el borde izquierdo del contenedor */
+    transform: translate(-50%, -50%); /* Centra el texto horizontal y verticalmente */
+    font-size: 2em; /* Aumenta el tamaño de la fuente a 2 veces el tamaño base */
+    text-align: center; /* Centra el texto dentro del elemento */
+    writing-mode: vertical-rl; /* Establece la escritura vertical de derecha a izquierda */
+    transform: rotate(180deg); /* Rota el texto 180 grados para invertir la dirección */
+    color: #ffffff; /* Establece el color del texto a blanco (duplicado, puedes eliminar uno) */
+}
