@@ -115,8 +115,7 @@
             <p>&copy; 2024 EmpresaXYZ. Todos los derechos reservados.</p>
         </div>
     </footer>
-
-    <script>
+<script>
     
         document.querySelectorAll('.tab').forEach(tab => {
             tab.addEventListener('click', () => {
@@ -127,14 +126,8 @@
                 document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
             });
         });
-        document.querySelectorAll('.tab').forEach(tab => {
-        tab.addEventListener('click', function() {
-            document.querySelectorAll('.tab, .tab-content').forEach(item => item.classList.remove('active'));
-            this.classList.add('active');
-            document.getElementById(this.getAttribute('data-tab')).classList.add('active');
-        });
-    });
     </script>
+    
     
 </body>
 </html>
